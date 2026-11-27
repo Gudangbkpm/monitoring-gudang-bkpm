@@ -1,17 +1,23 @@
+
 {
-  "id": "./",
-  "name": "MONITORING GUDANG BKPM",
-  "short_name": "MONITORING BKPM",
-  "description": "Upload dan pemeriksaan data AST gudang BKPM",
-  "lang": "id",
+  "name": "BKPM",
+  "short_name": "BKPM",
+  "description": "Monitoring Gudang BKPM",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#073b78",
-  "theme_color": "#073b78",
+  "background_color": "#ffffff",
+  "theme_color": "#0756a5",
   "icons": [
-    {"src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
-    {"src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }

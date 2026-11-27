@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#073b78">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MONITORING BKPM">
+  <meta name="description" content="Aplikasi monitoring gudang BKPM - Upload dan pemeriksaan AST.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>MONITORING GUDANG BKPM</title>
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div class="brand">
+        <div class="mark"><span>BKPM</span><i></i></div>
+        <div class="brand-copy">
+          <p class="eyebrow">SISTEM INFORMASI GUDANG</p>
+          <h1>MONITORING<br>GUDANG <em>BKPM</em></h1>
+          <p class="tagline">UPLOAD <b>•</b> CEK <b>•</b> PANTAU</p>
+        </div>
+      </div>
+      <div class="yellow-swoosh"></div>
+    </header>
+
+    <section class="actions" aria-label="Menu utama">
+      <a class="action upload" href="https://script.google.com/macros/s/AKfycbx4CbLLb667OODp5nv_TJQdQQsspJyQyWKdf69mLj0LGCnEHCRwakKKAQvgMk-fADr-/exec?page=upload">
+        <span class="symbol" aria-hidden="true">⇧</span>
+        <span class="action-copy"><strong>UPLOAD AST</strong><small>Upload foto barang<br>dan surat jalan</small></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="action check" href="https://script.google.com/macros/s/AKfycbx4CbLLb667OODp5nv_TJQdQQsspJyQyWKdf69mLj0LGCnEHCRwakKKAQvgMk-fADr-/exec?page=check">
+        <span class="symbol search" aria-hidden="true"></span>
+        <span class="action-copy"><strong>CEK AST</strong><small>Periksa data upload<br>dan status pemeriksaan</small></span>
+        <span class="arrow">›</span>
+      </a>
+    </section>
+
+    <section class="warehouse" aria-label="Informasi aplikasi">
+      <div class="warehouse-art">
+        <div class="sun"></div>
+        <div class="roof"></div>
+        <div class="building">
+          <div class="roofline"></div><div class="door"></div>
+          <div class="boxes"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="forklift"><span></span><b></b><i></i></div>
+        <div class="ground"></div>
+      </div>
+      <div class="note"><span class="shield">✓</span><span><b>Bersama wujudkan</b><br>pengelolaan gudang yang lebih baik</span></div>
+    </section>
+    <footer><span class="status-dot"></span> MONITORING GUDANG BKPM <span class="version">PWA</span></footer>
+  </main>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>
